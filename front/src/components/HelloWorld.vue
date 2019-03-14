@@ -30,7 +30,7 @@ export default {
       this.randomNumber = this.getRandomFromBackend();
     },
     getRandomFromBackend() {
-      const path = window.location+':5001/api/random';
+      const path = 'http://34.73.160.87:5001/api/random';
       axios
         .get(path)
         .then(response => {
